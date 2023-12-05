@@ -2,11 +2,8 @@
     <div>
 
         <div class=" px-12 text-[#002D3C] font-light leading-loose">
-            <div class="flex justify-between items-center pt-6">
-                <img src="../assets/black-logo.svg" alt="" class="w-12">
-                <img src="../assets/black-hamburger.svg" alt="" class="cursor-pointer w-10"
-                    @click="openHamburger = !openHamburger">
-            </div>
+            <BlackHero />
+
             <h1 class="text-center text-2xl font-semibold">Privacy policy</h1>
             <section class="p-7">
 
@@ -51,7 +48,7 @@
             <section class=" p-7">
                 <h3 class="font-semibold text-[18px] pt-5">Sustainable Disclosure for Funds</h3>
                 <p class="text-[12px]  md:text-[18px] ">Under SFDR, funds have to be classified in one of the following
-                    categories:
+                    categories:</p>
                 <ul>
                     <li> Funds with sustainable investment objective (article 9);</li>
                     <li>
@@ -63,7 +60,7 @@
                     </li>
                 </ul>
                 <p class="italic font-medium">All funds managed by the Company are Article 6.</p>
-                </p>
+
             </section>
 
             <section class=" p-7">
@@ -152,7 +149,11 @@
 <script setup>
 // @ is an alias to /src
 import Footer from '@/components/Footer.vue'
-import Hero from '@/components/Hero.vue'
+import BlackHero from '@/components/BlackHero.vue'
+
+import { ref } from 'vue'
+
+const openHamburger = ref(false)
 
 
 </script>
