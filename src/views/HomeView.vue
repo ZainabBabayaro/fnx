@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <main class="bg-[url('../assets/hero-bg.svg')] w-full h-[317px] md:h-[450px] relative md:bg-cover">
+    <main class="bg-[url('../assets/hero-bg.svg')] w-full h-[317px] md:h-[430px] relative md:bg-cover">
       <section class="p-7">
         <Hero />
         <div class="flex items-center justify-center mt-16 md:mt-32">
@@ -10,7 +10,7 @@
           </h2>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center pb-10">
           <router-link :to="{ name: 'contact-us' }">
             <p class="bg-[#9F836C] text-white  px-8 py-2 mt-8 rounded-md text-center">Get In Touch</p>
           </router-link>
@@ -18,10 +18,10 @@
       </section>
 
 
-      <section class="my-6 space-y-5 p-7">
-        <h3 class="font-semibold text-[16px] md:mt-10">How We Manage And Secure Your Investments </h3>
+      <section class=" space-y-5 p-7 md:pt-10">
+        <h3 class="font-semibold text-[16px] md:mt-16">How We Manage And Secure Your Investments </h3>
         <div class="md:grid md:grid-cols-2 md:space-x-4  ">
-          <div class="my-4">
+          <div class="">
             <h3 class="underline text-[14px] pt-4 py-2">Expect more from your Management Company </h3>
             <p class=" text-[12px]">Demand a team which has real and direct experience of managing UCITS and AIF Funds,
               raising assets, and
